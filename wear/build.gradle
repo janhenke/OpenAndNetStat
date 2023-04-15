@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.github.janhenke.openandnetstat"
@@ -23,16 +23,16 @@ android {
     buildFeatures {
         viewBinding true
     }
+	namespace 'com.github.janhenke.openandnetstat'
 }
 
 dependencies {
-	compileOnly 'org.projectlombok:lombok:1.18.20'
-	annotationProcessor 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
     implementation 'com.google.android.gms:play-services-wearable:17.1.0'
     implementation 'androidx.percentlayout:percentlayout:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    implementation 'androidx.wear:wear:1.1.0'
+	implementation 'androidx.wear:wear:1.2.0'
 //    wearApp project(":wear")
 }
